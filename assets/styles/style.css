@@ -1,0 +1,84 @@
+@font-face {
+    font-family: SF-Pro;
+    src: url(../fonts/SF-Pro.ttf);
+}
+
+body {
+    margin: 0;
+    
+    background-color: #262626;
+    
+    font-family: SF-Pro;
+    color: white;
+}
+
+h1, p {
+    margin: 0;
+}
+
+header {
+    display: block;
+    background-color: rgba(140, 132, 90, 0.7);
+    width: 100vw;
+    height: 3.75rem;
+}
+
+header > h1 {
+    margin: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    width: max-content;
+    height: 100%;
+
+    align-content: center;
+    justify-content: center;
+
+    margin-left: 2.0625rem;
+}
+
+main {
+    margin-top: 33px;
+    margin-left: 2.62500rem;
+}
+
+main > article {
+    margin-bottom: 33px;
+    max-width: 47.8125rem;
+}
+
+main > article > h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+main > article > p {
+    color: rgba(210, 210, 210, 0.65);
+
+    font-weight: 400;
+    font-size: 20px;
+}
+
+aside {
+    position: absolute;
+    margin: 0;
+    top: 5rem;
+    right: 52px;
+}
+
+aside > img {
+    max-width: 280px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1152px) {
+    aside {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
