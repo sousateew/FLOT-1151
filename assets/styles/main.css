@@ -80,15 +80,19 @@ aside > img {
 }
 
 header > nav {
+    display: flex;
     position: absolute;
-    right: 2.0625rem;
-    height: 100%;
+    height: 3.75rem;
+    right: 0;
+    justify-self: center;
+    align-self: center;
 }
 
 header > nav > a {
     color: white;
     margin: 20px 20px;
     text-decoration: none;
+    height: 100%;
 }
 
 @media screen and (max-width: 1138px) {
@@ -106,24 +110,28 @@ header > nav > a {
     }
 
     header {
-        max-height: 3.75rem;
+        max-width: 100%;
+        margin: 0 auto;
         justify-content: center;
+        align-items: center;
     }
 
     header > nav {
+        
+        right: auto;
         text-align: center;
     }
 
     header > h1 {
-        margin-right: 40%;    
-        margin-bottom: 40%;    
+        font-size: 18px;
+        /* margin-right: 55%; */
+        display: none;
     }
     
     main > article.article1{
         text-align: center;
         opacity: 70%;
         font-size: 1px;
-
     }
     
     main > article.article2{
@@ -131,6 +139,7 @@ header > nav > a {
         opacity: 70%;
         font-size: 0,1%;
     } 
+     
     
 }
 
@@ -139,11 +148,21 @@ header > nav > a {
 }
 
 #memb {
-    margin-top: 57%;
-    margin-right: 30%;
-    width: 500px;
+    
+    position: absolute;
+    margin: 0;
+    top: 6.5rem;
+    right: 0.25rem;
+
 }
 
 #membros {
-    max-width: 500px;
+    max-width: 70%;
+    
+    
+    
+}
+
+#spotf {
+    margin-right: 30%;
 }

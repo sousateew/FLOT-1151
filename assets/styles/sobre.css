@@ -1,2 +1,3 @@
-/* SE FOR MEXER NA ESTRUTURA, MEXA NO MAIN.CSS */
-/* DEIXE AQUI APENAS PARA A PÁGINA DE SOBRE */
+main > article > p{
+    text-align: center;
+}
