@@ -8,7 +8,7 @@ body {
     
     background-color: #262626;
     
-    font-family: SF-Pro;
+    font-family: SF-Pro, sans-serif;
     color: white;
 }
 
@@ -20,7 +20,7 @@ header {
     display: flex;
     flex-direction: row;
     background-color: rgba(140, 132, 90, 0.7);
-    width: 100vw;
+    width: 100%;
     height: 3.75rem;
     justify-content: left;
 }
@@ -55,6 +55,7 @@ main > article {
 }
 
 main > article > h1 {
+    margin-bottom: 0.6rem;
     font-weight: 700;
     font-size: 1.5625rem;
 }
@@ -78,8 +79,21 @@ aside > img {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 1152px) {
+header > nav {
+    position: absolute;
+    right: 2.0625rem;
+    height: 100%;
+}
+
+header > nav > a {
+    color: white;
+    margin: 20px 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1138px) {
     main {
+        max-width: 100%;
         margin: 2rem;
     }
 
@@ -92,6 +106,44 @@ aside > img {
     }
 
     header {
+        max-height: 3.75rem;
         justify-content: center;
     }
+
+    header > nav {
+        text-align: center;
+    }
+
+    header > h1 {
+        margin-right: 40%;    
+        margin-bottom: 40%;    
+    }
+    
+    main > article.article1{
+        text-align: center;
+        opacity: 70%;
+        font-size: 1px;
+
+    }
+    
+    main > article.article2{
+        text-align: center;
+        opacity: 70%;
+        font-size: 0,1%;
+    } 
+    
+}
+
+#selected {
+    color: rgba(255, 255, 255, 50%);
+}
+
+#memb {
+    margin-top: 57%;
+    margin-right: 30%;
+    width: 500px;
+}
+
+#membros {
+    max-width: 500px;
 }
