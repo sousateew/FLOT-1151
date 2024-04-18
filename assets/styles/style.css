@@ -22,7 +22,7 @@ header {
     background-color: rgba(140, 132, 90, 0.7);
     width: 100vw;
     height: 3.75rem;
-    justify-content: center;
+    justify-content: left;
 }
 
 header > h1 {
@@ -89,5 +89,9 @@ aside > img {
         right: auto;
         margin: 20px auto;
         text-align: center;
+    }
+
+    header {
+        justify-content: center;
     }
 }
