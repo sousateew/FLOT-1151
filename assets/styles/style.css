@@ -17,10 +17,12 @@ h1, p {
 }
 
 header {
-    display: block;
+    display: flex;
+    flex-direction: row;
     background-color: rgba(140, 132, 90, 0.7);
     width: 100vw;
     height: 3.75rem;
+    justify-content: center;
 }
 
 header > h1 {
@@ -34,38 +36,41 @@ header > h1 {
     height: 100%;
 
     align-content: center;
-    justify-content: center;
 
     margin-left: 2.0625rem;
 }
 
+header > h1 > span {
+    opacity: 50%;
+}
+
 main {
-    margin-top: 33px;
+    margin-top: 2.0625rem;
     margin-left: 2.62500rem;
 }
 
 main > article {
-    margin-bottom: 33px;
+    margin-bottom: 2.0625rem;
     max-width: 47.8125rem;
 }
 
 main > article > h1 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 main > article > p {
     color: rgba(210, 210, 210, 0.65);
 
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 aside {
     position: absolute;
     margin: 0;
     top: 5rem;
-    right: 52px;
+    right: 3.25rem;
 }
 
 aside > img {
@@ -74,6 +79,10 @@ aside > img {
 }
 
 @media screen and (max-width: 1152px) {
+    main {
+        margin: 2rem;
+    }
+
     aside {
         position: relative;
         top: auto;
