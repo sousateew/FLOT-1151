@@ -79,6 +79,12 @@ main > article > p {
     font-size: 2vh;
 }
 
+main > article a {
+    color: rgb(210, 210, 210);
+    cursor: pointer;
+    /* text-decoration: none; */
+}
+
 aside {
     position: absolute;
     margin: 0;
@@ -141,7 +147,6 @@ span.blur::selection {
     }
 
     header > nav {
-        
         right: auto;
         text-align: center;
     }
@@ -152,6 +157,13 @@ span.blur::selection {
         display: none;
     }
     
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     main > article {
         text-align: center;
     }

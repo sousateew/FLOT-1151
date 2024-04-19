@@ -8,15 +8,30 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/sobre.css">
+
+    <link rel="stylesheet" href="assets/styles/loading.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
+    <div id="loading-container">
+        <div id="loading">
+            <svg viewBox="0 0 226 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.68 28.08H0.640015L2.96001 13.36C14.08 12.72 20.96 8.39998 24.8 0.47998H49.68L40.24 60H10.64L15.68 28.08Z" fill="white"/>
+                <path d="M63.6488 28.08H48.6088L50.9288 13.36C62.0488 12.72 68.9288 8.39998 72.7688 0.47998H97.6488L88.2088 60H58.6088L63.6488 28.08Z" fill="white"/>
+                <path d="M136.498 61.2H132.578C94.0175 61.2 94.0975 46.16 94.9775 40.96L95.0575 40.48H125.378C125.458 41.2 126.098 44.64 135.458 44.64C143.778 44.64 145.858 41.68 145.858 38.48C145.858 35.2 143.298 33.12 136.738 33.12C127.698 33.12 126.018 36.72 125.858 37.6H96.2575L102.178 0.47998H178.098L175.618 16.08H129.458L128.258 23.92C129.698 22.96 136.018 19.12 150.098 19.12H150.658C172.178 19.12 176.578 28 176.578 37.2C176.578 38.8 176.338 40.48 176.018 42.08C174.098 51.28 167.778 61.2 136.498 61.2Z" fill="white"/>
+                <path d="M191.227 28.08H176.187L178.507 13.36C189.627 12.72 196.507 8.39998 200.347 0.47998H225.227L215.787 60H186.187L191.227 28.08Z" fill="white"/>
+            </svg>
+        </div>
+    </div>
+
     <header>
         <h1>Sobre <span>(1151)</span></h1>
 
         <nav>
             <a href="index.html" >Ínicio</a>
             <a id="selected">Sobre o tema</a>
-            <a href="musica.html">Ouvir música</a>
+            <a href="musica.html">Música</a>
+            <a href="time.html">Time</a>
         </nav>
     </header>
 
@@ -30,5 +45,6 @@
         </article>
     </main>
 
+    <script src="assets/scripts/loading.js"></script>
 </body>
 </html>
