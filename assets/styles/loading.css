@@ -1,0 +1,76 @@
+div#loading-container {
+    position: fixed;
+    display: block;
+
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(140, 132, 90);
+}
+
+div#loading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+    z-index: 100;
+}
+
+div#loading p {
+    margin: 40px;
+}
+
+svg path {
+    fill: transparent;
+    stroke-width: 1;
+    stroke: white;
+
+    stroke-dasharray: 458;
+    stroke-dashoffset: 458;
+
+    animation: svgAnimation 6s ease-in-out forwards infinite;
+}
+
+@keyframes svgAnimation {
+    0% {
+        stroke-dashoffset: 458;
+        stroke-width: 1;
+    }
+    
+    25% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    
+    50% {
+        stroke-dashoffset: 0;
+        fill: white;
+        stroke-width: 0;
+    }
+
+    75% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    100% {
+        stroke-dashoffset: 458;
+        stroke-width: 1;
+    }
+}
+
+@keyframes hideLoadingContainer {
+    from {
+        opacity: 100%;
+    }
+    
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
