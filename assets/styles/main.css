@@ -50,8 +50,9 @@ main {
 }
 
 main > article {
-    margin-bottom: 2.0625rem;
+    margin-bottom: 2.1625rem;
     max-width: 47.8125rem;
+    opacity: 90%;
 }
 
 main > article > h1 {
@@ -62,7 +63,8 @@ main > article > h1 {
 
 main > article > h2 {
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    opacity: 60%;
 }
 
 main > article > p {
@@ -147,6 +149,5 @@ span.blur::selection {
     
     main > article {
         text-align: center;
-        opacity: 70%;
     }
 }
