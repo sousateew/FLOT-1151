@@ -1,0 +1,7 @@
+main > article > p {
+    text-decoration: underline;
+}
+
+main > article > p i[class="fa-solid fa-crown"] {
+    color: rgb(216, 216, 82);
+}

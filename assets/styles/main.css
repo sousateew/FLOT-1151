@@ -80,9 +80,9 @@ main > article > p {
 }
 
 main > article a {
-    color: rgb(210, 210, 210);
+    color: rgb(210, 210, 210, 0.65);
     cursor: pointer;
-    /* text-decoration: none; */
+    /* text-decoration: line; */
 }
 
 aside {
